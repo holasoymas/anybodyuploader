@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <script type="module" src="js/upload.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>File Upload with Preview</h2>
+    <form class="upload-form" multipart="">
+      <div class="file-input">
+        <label class="custom-file-upload">
+          Choose File
+          <input type="file" id="fileInput" accept="">
+        </label>
+      </div>
+
+      <input type="submit" name="submit" value="Submit" class="custom-file-upload">
+    </form>
+    <div class="preview-container" id="previewContainer">
+      <div class="preview-content" id="previewContent"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
