@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>File Display</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 2rem;
+    }
+
+    .file-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .file-box {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .file-info {
+      flex-grow: 1;
+    }
+
+    .file-info p {
+      margin: 0.2rem 0;
+    }
+
+    .download-btn {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #007bff;
+      transition: color 0.2s;
+    }
+
+    .download-btn:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align: center; margin: 2rem;text-decoration: underline;">Uploaded Files</h1>
+  <div class="file-container">
+    <div class="file-box">
+      <div class="file-info">
+        <p><strong>Name:</strong> videoplayback.webm</p>
+        <p><strong>Type:</strong> video/webm</p>
+        <p><strong>Size:</strong> 1.11 GB</p>
+      </div>
+      <a href="/uploads/f05d4425d14b5c43d810b0ae2d991f7d" download="videoplayback.webm" class="download-btn"
+        title="Download">
+        ⬇
+      </a>
+    </div>
+    <div class="file-box">
+      <div class="file-info">
+        <p><strong>Name:</strong> videoplayback.webm</p>
+        <p><strong>Type:</strong> video/webm</p>
+        <p><strong>Size:</strong> 1.11 GB</p>
+      </div>
+      <a href="/uploads/f05d4425d14b5c43d810b0ae2d991f7d" download="videoplayback.webm" class="download-btn"
+        title="Download">
+        ⬇
+      </a>
+    </div>
+    <div class="file-box">
+      <div class="file-info">
+        <p><strong>Name:</strong> videoplayback.webm</p>
+        <p><strong>Type:</strong> video/webm</p>
+        <p><strong>Size:</strong> 1.11 GB</p>
+      </div>
+      <a href="/uploads/f05d4425d14b5c43d810b0ae2d991f7d" download="videoplayback.webm" class="download-btn"
+        title="Download">
+        ⬇
+      </a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
