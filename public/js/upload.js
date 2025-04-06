@@ -1,4 +1,5 @@
 
+import Config from "./config.js";
 const fileInput = document.getElementById('fileInput');
 const previewContainer = document.getElementById('previewContainer');
 const previewContent = document.getElementById('previewContent');
@@ -54,7 +55,7 @@ document.querySelector(".upload-form").addEventListener("submit", (e) => {
   // console.log("you submeitted it ")
   const formData = new FormData(e.target);
 
-  fetch("http://localhost:5000/upload", { method: "POST", body: formData })
+  fetch(`${Config.DOMAIN}/upload`, { method: "POST", body: formData })
     .then(res => console.log(res.json()))
     .catch(err => console.error(err))
 })
