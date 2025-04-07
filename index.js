@@ -32,7 +32,7 @@ app.post("/upload", upload.single("fileInput"), async (req, res) => {
     console.log(fileData)
 
     const fileInfo = await loadFilesInfo(JSON_FILE_DATA_PATH);
-    fileInfo.push(fileData);
+    fileInfo.unshift(fileData);
     await addFile(fileInfo, JSON_FILE_DATA_PATH);
 
     res.status(201).json({ msg: "File uplaoded successfully" });
