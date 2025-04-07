@@ -1,4 +1,3 @@
-
 import Config from "./config.js";
 const fileInput = document.getElementById('fileInput');
 const previewContainer = document.getElementById('previewContainer');
@@ -50,12 +49,22 @@ fileInput.addEventListener('change', function(e) {
   }
 });
 
-document.querySelector(".upload-form").addEventListener("submit", (e) => {
+document.querySelector(".upload-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   // console.log("you submeitted it ")
   const formData = new FormData(e.target);
 
-  fetch(`${Config.DOMAIN}/upload`, { method: "POST", body: formData })
-    .then(res => console.log(res.json()))
-    .catch(err => console.error(err))
+  try {
+    const res = await fetch(`${Config.DOMAIN}/upload`, { method: "POST", body: formData });
+    const data = await res.json();
+    console.log(data)
+    if (!res.ok) {
+      return alert(data.error);
+    }
+    if (res.ok) {
+      window.location.href = "/uploads.html";
+    }
+  } catch (_err) {
+    alert("Something went wrong, Try again later");
+  }
 })

@@ -1,12 +1,42 @@
 [
   {
     "fieldname": "fileInput",
-    "originalname": "videoplayback.webm",
+    "originalname": "Visa_Application_FillableForm.pdf",
     "encoding": "7bit",
-    "mimetype": "video/webm",
+    "mimetype": "application/pdf",
     "destination": "uploads/",
-    "filename": "f05d4425d14b5c43d810b0ae2d991f7d",
-    "path": "uploads/f05d4425d14b5c43d810b0ae2d991f7d",
-    "size": 1111322245
+    "filename": "80b69bd20f8c0d008c0df8934b866277",
+    "path": "uploads/80b69bd20f8c0d008c0df8934b866277",
+    "size": 274049
+  },
+  {
+    "fieldname": "fileInput",
+    "originalname": "visa_application_form.pdf",
+    "encoding": "7bit",
+    "mimetype": "application/pdf",
+    "destination": "uploads/",
+    "filename": "6b6c06e983c6f9bc6834a6b1847815cb",
+    "path": "uploads/6b6c06e983c6f9bc6834a6b1847815cb",
+    "size": 159566
+  },
+  {
+    "fieldname": "fileInput",
+    "originalname": "images (2).png",
+    "encoding": "7bit",
+    "mimetype": "image/png",
+    "destination": "uploads/",
+    "filename": "7c603935c28ef316f5dcbe2ec36f39aa",
+    "path": "uploads/7c603935c28ef316f5dcbe2ec36f39aa",
+    "size": 9566
+  },
+  {
+    "fieldname": "fileInput",
+    "originalname": "images (1) (1).png",
+    "encoding": "7bit",
+    "mimetype": "image/png",
+    "destination": "uploads/",
+    "filename": "6baa5d2474a4f8c2df63a0da964280e6",
+    "path": "uploads/6baa5d2474a4f8c2df63a0da964280e6",
+    "size": 28547
   }
 ]
